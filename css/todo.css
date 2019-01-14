@@ -27,6 +27,12 @@ div.list-group-item button.delete {
 }
 
 
+div.todo-list-wrapper {
+    max-height: 70vh;
+    min-height: 70vh;
+    overflow-y: auto;
+}
+
 
 div.list-group-item:hover button.delete {
     visibility: visible;

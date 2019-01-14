@@ -21,22 +21,24 @@ export const todoLayout = `
         </form>
     </div>
     <div class="row mt-1">
-        <div class="col justify-content-center">
+        <div class="col justify-content-center todo-list-wrapper">
             <div class="list-group">
             </div>
         </div>
     </div>
-    <div class="row mt-1">
-        <div class="col d-flex justify-content-between">
-            <div class="btn-group sort-actions" role="group" aria-label="Basic example">
-              <button type="button" data-toggle="tooltip" data-placement="bottom" title="Sort by text (ASC)" data-field="text" data-order="-1" class="btn btn-secondary"><i class="fas fa-sort-alpha-up"></i></button>
-              <button type="button" data-toggle="tooltip" data-placement="bottom" title="Sort by text (DESC)" data-field="text" data-order="1" class="btn btn-secondary"><i class="fas fa-sort-alpha-down"></i></button>
-              <button type="button" data-toggle="tooltip" data-placement="bottom" title="Sort with incomplete items on top" data-field="isDone" data-order="-1" class="btn btn-secondary btn-info"><i class="fas fa-long-arrow-alt-up"></i><i class="fas fa-check-double"></i></button>
-              <button type="button" data-toggle="tooltip" data-placement="bottom" title="Sort by created time (ASC)" data-field="createdAt" data-order="-1" class="btn btn-secondary"><i class="fas fa-long-arrow-alt-up"></i><i class="fas fa-clock"></i></button>
-              <button type="button" data-toggle="tooltip" data-placement="bottom" title="Sort by created time (DESC)" data-field="createdAt" data-order="1" class="btn btn-secondary"><i class="fas fa-long-arrow-alt-down"></i><i class="fas fa-clock"></i></button>
-            </div>
-            <div class="btn-group" role="group" aria-label="Basic example">
-              <button type="button" class="btn btn-secondary clear-complete"><i class="fas fa-minus-circle"></i> Clear Completed</button>
+    <div class="row">
+        <div class="col">
+            <div class="row d-flex justify-content-between">
+                <div class="col-12 col-sm-7 col-md-6 col-lg-4 mt-1 btn-group sort-actions" role="group" aria-label="Basic example">
+                  <button type="button" data-toggle="tooltip" data-placement="bottom" title="Sort by text (ASC)" data-field="text" data-order="-1" class="btn btn-secondary"><i class="fas fa-sort-alpha-up"></i></button>
+                  <button type="button" data-toggle="tooltip" data-placement="bottom" title="Sort by text (DESC)" data-field="text" data-order="1" class="btn btn-secondary"><i class="fas fa-sort-alpha-down"></i></button>
+                  <button type="button" data-toggle="tooltip" data-placement="bottom" title="Sort with incomplete items on top" data-field="isDone" data-order="-1" class="btn btn-secondary btn-info"><i class="fas fa-long-arrow-alt-up"></i><i class="fas fa-check-double"></i></button>
+                  <button type="button" data-toggle="tooltip" data-placement="bottom" title="Sort by created time (ASC)" data-field="createdAt" data-order="-1" class="btn btn-secondary"><i class="fas fa-long-arrow-alt-up"></i><i class="fas fa-clock"></i></button>
+                  <button type="button" data-toggle="tooltip" data-placement="bottom" title="Sort by created time (DESC)" data-field="createdAt" data-order="1" class="btn btn-secondary"><i class="fas fa-long-arrow-alt-down"></i><i class="fas fa-clock"></i></button>
+                </div>
+                <div class="col-12 col-sm-5 col-md-5 col-lg-4 mt-1 btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-secondary clear-complete"><i class="fas fa-minus-circle"></i> Clear Completed</button>
+                </div>
             </div>
         </div>
     </div>
